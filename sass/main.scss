@@ -1,12 +1,7 @@
-:root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196F3;
-
-}
+@import "./utils/variables";
 body {
     background-color: #ffffff;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
@@ -24,7 +19,7 @@ img{
     margin-right: auto;
 }
 .logo > span{
-    color: var(--accent-color);
+    color: $accent-color;
     }
 .logo {
     color: black;
@@ -57,7 +52,7 @@ img{
     padding-top: 32px;
     padding-bottom: 32px;
 
-    color: var(--title-text-color);
+    color: $title-text-color;
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 14px;
@@ -70,7 +65,7 @@ img{
 }
 .site-nav .link:hover, 
 .site-nav .link:focus{
-    color: var(--accent-color); 
+    color: $accent-color; 
 }
 .site-nav .item{
     position: relative;
@@ -80,7 +75,7 @@ img{
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: var(--accent-color); 
+    background-color: $accent-color; 
     left: 0;
     bottom: 0;
     border-radius: 2px;
@@ -98,7 +93,7 @@ img{
     align-items: center;
 }
 .mail .link {
-     color: var(--primary-text-color);
+     color: $primary-text-color;
      letter-spacing: 0.02em;
      font-weight: 500;
      font-size: 14px;
@@ -111,7 +106,7 @@ img{
 }
 .mail .link:hover,
 .mail .link:focus{
-    color: var(--accent-color);  
+    color: $accent-color;  
 }
 .info{
     margin-right: 10px;
@@ -122,7 +117,7 @@ img{
 .mail .link:hover .info,
 .mail .link:focus .info
 {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 .hero {
     padding-top: 200px;
@@ -171,7 +166,7 @@ img{
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
@@ -222,7 +217,7 @@ img{
     margin-top: 0px;
     margin-bottom: 10px;
 
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -239,7 +234,7 @@ img{
     margin-top: 0px;
     margin-bottom: 50px;
    
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -331,7 +326,7 @@ margin-right: 10px;
 }
 .social-icon-link:hover,
 .social-icon-link:focus{
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 .social-icon-link:hover .social-icon,
 .social-icon-link:focus .social-icon{
@@ -381,7 +376,7 @@ margin-right: 10px;
     margin-top: 0px;
     margin-bottom: 10px;
 
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -421,11 +416,11 @@ margin-right: 10px;
 }
 .customer-icon-link:hover,
 .customer-icon-link:hover{
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 }
 .customer-icon-link:hover .social-icon-partner,
 .customer-icon-link:focus .social-icon-partner{
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 .social-icon-partner{
     transition-property: fill;
@@ -448,7 +443,7 @@ margin-right: 10px;
     text-decoration: none;
 }
 .post-logo > span{
-    color: var(--accent-color);
+    color: $accent-color;
     margin-bottom: 20px;
     
 }
@@ -553,7 +548,7 @@ color: #FFFFFF;
 
 }
 .form-policy{
-    color: var(--accent-color);
+    color: $accent-color;
 /* text-decoration: none; */
 }
 
@@ -594,10 +589,10 @@ border-radius: 4px;
     border: 0;
 }
 .exit-modal:hover{
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 .exit-modal:focus{
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 .exit-modal{
     transition-property: fill;
@@ -657,7 +652,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 
     }
     .form-group input, textarea:focus{
-        outline-color: var(--accent-color);
+        outline-color: $accent-color;
     }
     .form-group input, textarea{
     transition-property: outline-color;
@@ -679,7 +674,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 
     }
     .form-group input:focus + .picture{
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 
     .form-label{
@@ -790,8 +785,8 @@ color: #757575;
 
  
 .checkbox:checked + span::before{
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
     background-image: url(../images/Vector@2x.svg);
 
 }
@@ -817,7 +812,7 @@ color: #757575;
     margin-bottom: 9px;
 }
 .site-nav .current{
-    color: var(--accent-color);
+    color: $accent-color;
     }
 
 .conteiner.project{
@@ -834,7 +829,7 @@ color: #757575;
 
 }
 .filtr-project :hover{
-    background: var(--accent-color);
+    background: $accent-color;
     color:#ffffff;
 }
 .filtr-project :hover .filtr-title{
@@ -851,9 +846,9 @@ color: #757575;
 .filtr .item:not(:last-child){
 margin-right: 8px;
 }
- .filtr-title: :hover{ */
+ .filtr-title:hover{ 
      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
-     background-color: var(--accent-color) 
+     background-color: $accent-color 
  } 
 
 .filtr-title{
@@ -950,7 +945,7 @@ color: #FFFFFF;
     margin-bottom: 4px;
     
 
-    color: var(--title-text-color);
+    color: $title-text-color;
     letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 18px;
@@ -964,7 +959,7 @@ color: #FFFFFF;
     line-height: 1.86;
 }
 .filtr-title{
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
