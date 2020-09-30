@@ -1,0 +1,80 @@
+.social-icon-list{
+    display: flex;
+    justify-content: center;
+
+}
+.social-icon-item:not(:last-child){
+margin-right: 10px;
+}
+.social-icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+    
+}
+.social-icon-link:hover,
+.social-icon-link:focus{
+    background-color: $accent-color;
+}
+.social-icon-link:hover .social-icon,
+.social-icon-link:focus .social-icon{
+    fill: #fff;
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+
+    
+}
+.social-icon.info.envelope{
+    width: 16px;
+    height: 12px;
+}
+.social-icon.info.smartphone{
+    width: 10px;
+    height: 16px;
+}
+.social-icon-partner{
+    fill: #AFB1B8;
+    
+}
+.customer-icon-link{
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+}
+.customer-icon-link:hover,
+.customer-icon-link:hover{
+    border: 1px solid $accent-color;
+}
+.customer-icon-link:hover .social-icon-partner,
+.customer-icon-link:focus .social-icon-partner{
+    fill: $accent-color;
+}
+.social-icon-partner{
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+}
+.welcom .social-icon{
+    fill: #fff;
+}
+
+.post-social-icon{
+    margin-left: 70px;
+    margin-right: 93px;
+    }
