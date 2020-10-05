@@ -14,13 +14,11 @@
     letter-spacing: 0.06em;
  }
  .post-social-button{
-    /* position: relative;  */
-    
     width: 200px;
     height: 50px;
     margin-left: 12px;
     
-    background: #2196F3;
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     
@@ -30,42 +28,29 @@
     font-size: 16px;
     line-height: 30px;
     
-    /* padding-left: 29px; */
-    /* identical to box height, or 187% */
-    
-    /* display: flex;   */
-    /* align-items: center;    */
-     /* text-align: center;   */
     letter-spacing: 0.06em; 
     
     color: #FFFFFF;
     
-    }
-    .post-social-button-send::after{
+    
+    &-send::after{
         content: url(../images/iconsend.svg);
         width: 24px;
         height: 24px;
         padding-left: 10px; 
-        /* padding-top: 13px; */
-        /* padding-bottom: 13px; */
+        
         background-position: center;
     }
-    .post-social-button .social-icon{
-        /* position: absolute; */
-        /* top: 50%; */
-    
-       
+    & .social-icon{
+               
         right: 8px; 
         top: 13px; 
         bottom: 13px; 
-        /* padding-bottom: 13px; */
-        /* padding-top: 13px; */
-    
+       
         width: 24px;
         height: 24px;
-    
-    
-    }
+        
+    }}
     .button-form{
         margin: auto;
         position: absolute;
