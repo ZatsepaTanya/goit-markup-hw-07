@@ -853,6 +853,14 @@ textarea {
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
 }
 
+.filtr-title {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
 .card {
   padding: 20px 24px;
 }
@@ -922,7 +930,7 @@ textarea {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.exit .item {
+.example .item {
   transition-property: obox-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
@@ -943,13 +951,5 @@ textarea {
   margin-bottom: 0px;
   font-size: 16px;
   line-height: 1.86;
-}
-
-.filtr-title {
-  color: #212121;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
