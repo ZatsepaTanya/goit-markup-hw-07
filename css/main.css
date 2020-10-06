@@ -219,8 +219,7 @@ p {
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
 }
 
-.customer-icon-link:hover,
-.customer-icon-link:hover {
+.customer-icon-link:hover, .customer-icon-link:hover {
   border: 1px solid #2196F3;
 }
 
@@ -474,15 +473,15 @@ textarea {
   position: relative;
 }
 
+.site-nav .current {
+  color: #2196F3;
+}
+
 .info {
   margin-right: 10px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
-}
-
-.site-nav .current {
-  color: #2196F3;
 }
 
 .mail {
@@ -492,11 +491,6 @@ textarea {
 
 .mail .item:not(:last-child) {
   margin-right: 50px;
-}
-
-.social-mail-phone {
-  display: flex;
-  align-items: center;
 }
 
 .mail .link {
@@ -519,6 +513,11 @@ textarea {
 .mail .link:hover .info,
 .mail .link:focus .info {
   fill: #2196F3;
+}
+
+.social-mail-phone {
+  display: flex;
+  align-items: center;
 }
 
 .section-title {
@@ -581,22 +580,6 @@ textarea {
   margin-bottom: 30px;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astrounaut::before {
-  background-image: url(../images/astronaut.svg);
-}
-
 .features .item {
   width: 270px;
 }
@@ -616,6 +599,22 @@ textarea {
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astrounaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .work {
@@ -730,15 +729,25 @@ textarea {
   background-color: #2F303A;
 }
 
+.post .title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
 .post-address:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.post-address:last-child {
+.post-address:not(:last-child):last-child {
   padding-bottom: 60px;
 }
 
-.post-address:first-child {
+.post-address:not(:last-child):first-child {
   margin-top: 20px;
 }
 
@@ -749,16 +758,6 @@ textarea {
 
 .welcom {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.post .title {
-  color: #ffffff;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
 }
 
 .post-social-input {
@@ -783,10 +782,6 @@ textarea {
   margin-bottom: 0px;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
-
-.post-address:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .conteiner.project {
@@ -868,6 +863,42 @@ textarea {
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
 }
 
+.example .item:hover,
+.example .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.example .item {
+  transition-property: obox-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
+}
+
+.example .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.example .item:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
+
+.example .title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  color: #212121;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.example > p {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.86;
+}
+
 .about-example-work {
   position: relative;
   overflow: hidden;
@@ -899,43 +930,7 @@ textarea {
   transform: translateY(0);
 }
 
-.example .item:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.example .item:nth-last-child(-n+3) {
-  margin-bottom: 0px;
-}
-
 .example-work {
   text-decoration: none;
-}
-
-.example .item:hover,
-.example .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.example .item {
-  transition-property: obox-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
-}
-
-.example .title {
-  margin-top: 0px;
-  margin-bottom: 4px;
-  color: #212121;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
-
-.example > p {
-  margin-top: 4px;
-  margin-bottom: 0px;
-  font-size: 16px;
-  line-height: 1.86;
 }
 /*# sourceMappingURL=main.css.map */

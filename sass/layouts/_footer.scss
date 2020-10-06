@@ -1,16 +1,28 @@
 .post {
     padding-top: 60px;
     background-color: #2F303A;
+
+     .title{
+        color:#ffffff;
+        font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+        
+    }
 }
 
 .post-address:not(:last-child){
     margin-bottom: 9px;
-}
-.post-address:last-child{
+
+&:last-child{
     padding-bottom: 60px ;
 }
-.post-address:first-child{
+&:first-child{
 margin-top: 20px;
+}
 }
 .post-social{
     display: flex;
@@ -22,16 +34,7 @@ margin-top: 20px;
     
 }
 
-.post .title{
-    color:#ffffff;
-    font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-    
-}
+
 
 .post-social-input{
     width: 358px;
@@ -48,15 +51,13 @@ letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-}
 
-.address .link{
+
+     .link{
     margin-top: 9px;
     margin-bottom: 0px;
 
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
-.post-address:not(:last-child){
-    margin-bottom: 9px;
 }

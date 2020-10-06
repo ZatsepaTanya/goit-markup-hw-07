@@ -69,12 +69,13 @@ margin-right: 10px;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
-}
-.customer-icon-link:hover,
-.customer-icon-link:hover{
+
+&:hover,
+&:hover{
     border: 1px solid $accent-color;
 }
-.customer-icon-link:hover .social-icon-partner,
-.customer-icon-link:focus .social-icon-partner{
+&:hover .social-icon-partner,
+&:focus .social-icon-partner{
     fill: $accent-color;
+}
 }

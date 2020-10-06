@@ -1,15 +1,14 @@
 .work{
     display: flex;
-   }
-
-.work .item:not(:last-child){
+   
+     .item:not(:last-child){
     margin-right: 30px;
  }
 
-.work .item{
+     .item{
     position: relative;
 }
-
+}
 .about-work-text{
     position: absolute;
 bottom: 0;
