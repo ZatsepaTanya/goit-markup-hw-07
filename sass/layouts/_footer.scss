@@ -1,8 +1,9 @@
 .post {
     padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
 
-     .title{
+    .title{
         color:#ffffff;
         font-family: Roboto;
     font-style: normal;
@@ -14,9 +15,9 @@
     }
 }
 
+
 .post-address:not(:last-child){
     margin-bottom: 9px;
-
 &:last-child{
     padding-bottom: 60px ;
 }
@@ -28,13 +29,11 @@ margin-top: 20px;
     display: flex;
     flex: baseline;
 }
-
+        
 .welcom{
     background-color: rgba(255, 255, 255, 0.1);
     
 }
-
-
 
 .post-social-input{
     width: 358px;
@@ -56,7 +55,6 @@ margin-top: 20px;
      .link{
     margin-top: 9px;
     margin-bottom: 0px;
-
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
